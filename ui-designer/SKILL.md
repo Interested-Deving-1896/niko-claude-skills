@@ -109,7 +109,14 @@ For each atom, also document:
 
 ### LAYER 2 — MOLECULES (grouping + hierarchy)
 
-*Read first:* `02-spacing-is-a-grouping-tool.md`.
+*Read first:* `02-spacing-is-a-grouping-tool.md`, **and `LESSONS.md` at the
+skill root** — real corrections from past reviews. Non-negotiables from it:
+every molecule has ONE payload element (name it; it gets space priority —
+metadata yields/shrinks/dies first, never the payload); say each fact once
+(no ref+crumb / dot+word duplication stealing payload width); single-line
+rows are table-thinking — in single-column lists let the payload wrap
+(clamp ~2 lines), peer-ness comes from repeated anatomy, not equal height;
+test every molecule at the narrowest real container it will live in.
 
 A molecule is a combination of atoms where **the grouping itself carries meaning**.
 

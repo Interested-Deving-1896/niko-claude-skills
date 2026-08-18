@@ -8,10 +8,15 @@ Public, shareable Claude Code skills — designed to be cloned into automation e
 |---|---|
 | [`ui-designer/`](ui-designer/) | Scaffold a new design system from scratch. Top-down, contract-based, atomic layering. Bundles the UI Design Course as canonical reference. |
 | [`ui-review/`](ui-review/) | Audit existing interfaces. Bottom-up, evidence-based, contract-violation hunting. Bundles the UI Design Course. |
+| [`route-ui-audit/`](route-ui-audit/) | Audit every route of a router-based app against a documented UI system — page templates, feedback, states, responsive, a11y, RTL. Writes the rules first if they don't exist. |
 | [`atomic-design-system/`](atomic-design-system/) | Atomic design system reference and methodology. |
+| [`landing-page-playbook/`](landing-page-playbook/) | Structure and copy for SaaS landing pages that convert — section order, CTAs, social proof, and what to cut. |
 | [`angular-21-expert/`](angular-21-expert/) | Angular 21 expert — standalone, zoneless, signals, modern routing. |
 | [`genkit-expert/`](genkit-expert/) | Firebase Genkit expert for Angular 21 + Firebase/GCP and FastAPI on Cloud Run. Flows, tools, agents, RAG, MCP. |
+| [`auth-builder/`](auth-builder/) | Build or audit auth + user management on Firebase Auth + Angular — invites, RBAC, custom claims, guards, Firestore rules, the credential-allowlist model. |
 | [`saas-goldmine/`](saas-goldmine/) | Audit projects for SaaS potential — competitive analysis, monetization, extraction planning. |
+| [`audit-tasks/`](audit-tasks/) | Scan a repo for open tasks buried in plans, roadmaps, and todo docs, then walk them with the user and file GitHub issues. |
+| [`mac-cleanup/`](mac-cleanup/) | Reclaim Mac disk space safely — survey where space lives, sort by risk tier, delete only what's confirmed. |
 
 Each skill is a self-contained directory with a `SKILL.md` (frontmatter + body) plus any auxiliary files (`course/`, `references/`).
 
