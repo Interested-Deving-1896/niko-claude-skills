@@ -49,6 +49,21 @@ All course articles are inside this skill folder at `~/.claude/skills/ui-review/
 
 ---
 
+## STEP -1 — THE PAYLOAD CHECK (before everything else)
+
+Lesson from a real miss (2026-06-12, Mycelium HQ): the audit found a derived-
+state bug and completely missed that the page's most common molecule — the
+issue row — showed **3 characters of its title**. The user hits the broken
+payload a hundred times before noticing any state lie.
+
+So, before reconstructing rules: find the most repeated molecule on the
+screen, name its ONE payload element (row → title, card → name), and check
+it renders readably **at the narrowest container it lives in**. Metadata
+protected by nowrap/no-shrink while the payload ellipsizes = Critical
+finding, always first in the report. Also flag payload-stealing redundancy
+(the same fact said twice on one row) and single-line truncation in
+single-column lists where wrapping (~2-line clamp) costs nothing.
+
 ## STEP 0 — RECONSTRUCT THE INTENDED RULES
 
 *Read first:* `00-the-methodology.md` → "The Review Methodology for Existing Systems" section.
