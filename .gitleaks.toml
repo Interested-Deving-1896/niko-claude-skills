@@ -1,0 +1,12 @@
+# Secret scan rules (L1 check 3). Gitleaks' default rules, plus one it lacks: a password
+# written inside a database URL, for example postgresql://user:password@host/db.
+[extend]
+useDefault = true
+
+[[rules]]
+id = "db-url-password"
+description = "Password inside a database connection URL"
+regex = '''(?i)\b(?:postgres(?:ql)?|mysql|mariadb|mongodb(?:\+srv)?|redis)(?:\+[a-z0-9]+)?://[^:@/\s'"]+:([^@/\s'"]{6,})@'''
+secretGroup = 1
+  [rules.allowlist]
+  regexes = ['''(?i)^(password|passwd|pass|pwd|secret|changeme|example|xxx+|\*+)$''', '''^\$''', '''^<''', '''^%''', '''^\{''']
