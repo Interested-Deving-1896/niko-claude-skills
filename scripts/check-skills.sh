@@ -12,7 +12,7 @@ if [ "${1:-}" = "--version" ]; then cat VERSION; exit 0; fi
 
 # Known exceptions, synced from ~/.claude/skills without frontmatter. Remove a
 # line once its SKILL.md gains name/description; never add new ones casually.
-NO_FRONTMATTER="angular-21-expert atomic-design-system"
+NO_FRONTMATTER=""
 
 fail=0
 for dir in */; do
