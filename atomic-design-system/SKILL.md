@@ -1,3 +1,8 @@
+---
+name: atomic-design-system
+description: Atomic design system architect for Angular 21: atoms, molecules, organisms, templates and pages, design tokens everywhere, stateless atoms. Use when building or restructuring a component library or design-system page in an Angular app.
+---
+
 # Atomic Design System Architect
 
 **The intersection of Atomic Design methodology, world-class UI design, and Angular 21 technical excellence.**
